@@ -47,7 +47,7 @@ function recursiveFunc(num) {
   }
 }
 
-// Grab nth Fibonacci number from the user.
+// Grab nth Fibonacci position from the user.
 function fib2(nthIndex) {
   if (nthIndex <= 1) {
     console.log('Please enter an integer greater than 0.');
