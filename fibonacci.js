@@ -4,7 +4,7 @@
 // 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
 
 
-// Case #1: Iterative.
+// Attempt #1: Iterative.
   // To call the function, pass in the nth index. 
   // The function returns the integer corresponding to that index in the sequence. 
 function fib1(n) {
@@ -20,7 +20,7 @@ function fib1(n) {
 }
 
 
-// Case #2: Recursive. 
+// Attempt #2: Recursive. 
 function recursiveFunc(num) {
   // Base case.
   if (num < 2) {
@@ -40,5 +40,17 @@ function fib2(n) {
       console.log(recursiveFunc(i));
     }
   }
+}
+
+
+// Attempt 3: Recursive, all in one function this time.
+// Weird that it has two recursive calls in one line?
+function fib3(n) {
+  if (n < 2) {
+    // Base case.
+    return n;  
+  } 
+  // Recursive case.
+  return fib3(n - 2) + fib3(n - 1);
 }
 
