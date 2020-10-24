@@ -29,7 +29,7 @@ function palindrome2(originalString) {
   var regExp = /[\W_]/g;
   var testString = originalString.toLowerCase().replace(regExp, '');
 
-  // When the loop finds two indices that don't match, return false.
+  // If the loop finds two indices that don't match, return false.
   for (var i = 0; i < testString.length / 2; i++) {
     if (testString[i] !== testString[testString.length - 1 - i]) {
       return false;
