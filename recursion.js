@@ -16,7 +16,7 @@ function getKthTerm(k) {
   } else if (k === 2) {
     return 3;
   } else {
-    return getKthTerm(k - 2) + getKthTerm(k - 1) * 2;
+    return getKthTerm(k - 2) + (2 * getKthTerm(k - 1));
   }
 }
 
