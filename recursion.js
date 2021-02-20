@@ -1,10 +1,10 @@
 // #1: In JavaScript, write a recursive function, getJthTerm, that takes one argument, j, and returns the jth element in this sequence.
 
-function getJthElement(i) {
+function getJthTerm(i) {
   if (j === 1) {
     return 1;
   } else {
-    return getJthElement(j - 1) + 3;
+    return getJthTerm(j - 1) + 3;
   }
 }
 
